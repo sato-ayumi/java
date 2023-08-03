@@ -1,7 +1,0 @@
-・基本的な出力の仕方
-
-class main {
-  public static void main(String[] args) {
-    System.out.println("Hello Java");
-  }
-}

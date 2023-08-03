@@ -1,0 +1,51 @@
+・基本的な出力の仕方
+
+class main {
+  public static void main(String[] args) {
+    System.out.println("Hello Java");
+  }
+}
+
+
+・単語の意味
+
+public	どこからでも参照可能
+static	インスタンス可(new)しなくても外部から使用可能
+void	戻り値なし
+main	メソッド名
+String[]	引数をString型の配列で受け取る
+args	引数名、argument（和訳：引数）の複数形でargumentsの略省
+
+
+・数値
+
+class main {
+  public stativ void main(String[] args) {
+    System.out.println(17);    
+    → 17
+    System.out.println(5 + 3);
+    → 8
+    System.out.println("5 + 3");
+    → 5 + 3
+    System.out.println(3 * 6);
+    → 18
+    System.out.println(12 / 3);
+    → 4
+    System.out.println(8 % 3);
+    → 2
+  }
+}
+
+
+・文字列の連結
+
+class main {
+  public static void main(String[] args) {
+  System.out.println("こんにちは" + "世界");
+  → こんにちは世界
+  System.out.println("38" + "19");
+  → 3819
+  System.out.println(38 + 19);
+  → 57
+  }
+}
