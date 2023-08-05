@@ -1,0 +1,50 @@
+・変数の定義
+
+class main {
+  public static void main(String[] args) {
+    int number;
+    number = 3;
+    System.out.println(number);
+    → ３
+    
+    String name;
+    name = "Wanko"
+    System.out.println(name);
+    → Wanko
+  }
+}
+
+・変数の初期化
+class main {
+  public static void main(String[] args) {
+    int number1 = 3;
+    int number2 = 7;
+    //変数同士の計算も可能
+    System.out.println(number1 * number2);
+    → 21
+    
+    String text  = "プログラミングを勉強しよう"
+    //変数を文字列のように連結も可能
+    System.out.println("Progateで" + text);
+    → Progateでプログラミングを勉強しよう
+  }
+}
+
+・変数の更新
+class main {
+  public static void main(String[] args) {
+    int number = 11;
+    String text  = "Ruby"
+    System.out.println(number);
+    → 11
+    System.out.println(text);
+    → Ruby
+    
+    number = 9;
+    System.out.println(number);
+    → 9
+    text = Java;
+    System.out.println(text);
+    → Java
+  }
+}
