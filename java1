@@ -49,3 +49,53 @@ class main {
   → 57
   }
 }
+
+・double型
+
+5(整数) ・・・int型
+3.14(小数) ・・・double型
+
+class main {
+  public static void main(String[] args) {
+  double number1 = 8.5;
+  double number2 = 3.4;
+  System.out.println(number1 + number2);
+  → 11.9
+  
+  System.out.println(number1 - number2);
+  → 5.1
+  }
+}
+
+・自動型変換
+String型とint型を足すとint型が自動でString型に変換され、文字列の結合が行われる
+
+System.out.println("佐藤さんは" + 23 "歳です");
+→ 23 がStirng型に変換される
+→ 佐藤さんは２３歳です
+
+・数値の計算の注意点
+
+int型同士の計算はint型で出力される
+（例）System.out.println(5 / 2);
+→ 2 (2.5とは出力されない)
+
+計算時の自動型変換
+int型とdouble型の計算はdouble型で出力される
+System.out,println(5.0 / 2);
+→ 2 が 2.0 に変換される
+→ 2.5 と出力
+
+・強制型変換
+
+class main {
+  public static void main(String[] args) {
+  int number1 = 7;
+  int number2 = 2;
+  System.out.println(number1 / number2);
+  → 3
+  
+  System.out.println( (double)number1 / number2);
+  → 3.5
+  }
+}

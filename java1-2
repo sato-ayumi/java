@@ -48,3 +48,29 @@ class main {
     → Java
   }
 }
+
+・自己代入
+class main {
+  public static void main(String[] args) {
+  int number = 3;
+  System.out.println(number);
+  → 3
+  
+  number = number + 7
+  System.out.println(number);
+  → 10
+  }
+}
+
+・自己代入の省略の仕方
+
+x = x + 10;  →  x += 10;
+x = x - 10;  →  x -= 10;
+x = x * 10;  →  x *= 10;
+x = x / 10;  →  x /= 10;
+x = x % 10;  →  x %= 10;
+
+・足し算、引き算の更に省略する方法
+
+x = x + 1; →  x += 1;  →  x++;
+x = x - 1; →  x -= 1;  →  x--;
