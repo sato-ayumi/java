@@ -130,3 +130,65 @@ class main {
     → 3で割り切れます
   }
 }
+
+・繰り返し処理(while)
+
+class main {
+  public static void main(String[] args) {
+    int number = 1;
+    
+    while(number <= 10) {
+      System.out.println(number);
+      number ++;
+    }
+    → 1~10が順番に出力される（numberが10を超えたタイミングでfalseとなり修了する）
+  }
+}
+
+・繰り返し処理(for)
+
+class main {
+  public static void main(String[] args) {
+    
+    for(number = 1; number <= 10; number ++;) {
+      System.out.println(number);
+      number ++;
+    }
+    → 1~10が順番に出力される（numberが10を超えたタイミングでfalseとなり修了する）
+  }
+}
+
+・繰り返し処理を終了させる方法
+
+ ~break~
+ 
+ class main {
+  public static void main(String[] args) {
+    int number = 1;
+    
+    while(number < 10) {
+      if(number % 5 == 0){
+        break;
+      }
+      System.out.println(number);
+      number ++;
+    }
+    → 1~4までが順番に出力される（numberが５の倍数になった時、繰り返し処理が終了される。）
+  }
+}
+
+ ~continue~
+ 
+ class main {
+  public static void main(String[] args) {
+    
+    for(number = 1; number < 10; number ++;) {
+      if(number % 3 == 0){
+        continue;
+      }
+      System.out.println(number);
+      number ++;
+    }
+    → 1,2,4,5,8が出力される（numberが3の倍数の時、処理がスキップされる）
+  }
+}
