@@ -40,3 +40,93 @@ x > y
 yの方が小さい時true
 x >= y
 yの方が小さい時又は等しい時true
+
+・論理演算子
+
+class main {
+  public static void main(String[] args) {
+    //「8 < 5」かつ「3 >= 2」の結果
+    System.out.println(8 < 5 && 3 >= 2);
+    → false
+    
+    //「8 < 5」または「3 >= 2」の結果
+    System.out.println(8 < 5 || 3 >= 2);
+    → true
+    
+    //「8 < 5」でない、の結果
+    System.out.println( !(8 < 5) );
+    → true
+ }
+}
+
+・条件分岐1(if, else, else if)
+
+class main {
+  public static void main(String[] args) {
+    if(true) {
+      System.out.println("条件式がtrueのため、出力されます");
+      → 条件式がtrueのため、出力されます
+    }
+    if(false) {
+      System.out.println("条件式がfalseのため、出力されません");
+      → （条件がfalseのため何も出力されない）    
+    }
+    
+    int x = 5
+    if(x > 2) {
+      System.out.println("xは2より大きい");
+      → xは2より大きい   
+    }
+    
+    if(x > 8) {
+      System.out.println("xは8より大きい");
+      → （条件がfalseのため何も出力されない）  
+    }
+    
+    int number = 12
+    if(number < 10) {
+      System.out.println("10より小さい");
+    } else {
+        System.out.println("10以上")
+      }
+    →  10以上
+    
+    int number = 12
+    if(number < 10) {
+      System.out.println("10より小さい");
+    } else if(number < 20) {
+      System.out.println("10以上、20より小さい");
+    } else {
+      System.out.println("10以上")
+    }
+    →  10以上、20より小さい
+ }
+}
+
+・条件分岐2(switch)
+〜breakの役割〜
+　switch文を修了する命令。
+　breakがないと合致したcaseの処理を行った後、その次のcaseの処理も実行してしまう。
+　
+class main {
+  public static void main(String[] args) {
+    int number = 12;
+    
+    //numberを3で割ったあまりの条件分岐
+    switch(number % 3){
+      case 0 :
+        System.out.println("3で割り切れます");
+        break;
+      case 1 :
+        System.out.println("3で割ると1余ります");
+        break;
+      case 2 :
+        System.out.println("3で割ると2余ります");
+        break;
+      default :
+        System.out.println("どれも当てはまりません");
+        break;
+    }
+    → 3で割り切れます
+  }
+}
